@@ -1,0 +1,216 @@
+body {
+    background-color: #E6EDB7;
+}
+
+.form-control:focus {
+    border-color: #C29B67;
+    box-shadow: 0 0 0 0.25rem #F6CCA4;
+}
+
+.mission-section {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.mission-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.mission-section p {
+    font-size: 1.1rem;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+.team-member h5 {
+    margin-top: 15px;
+    font-size: 1.25rem;
+}
+
+.team-member p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.container-fluid {
+    background-color: #C29B67;
+}
+
+footer {
+    background-color: #C29B67;
+}
+
+/* Custom CSS to change the highlight color of the accordion question */
+.accordion-header:focus {
+    background-color: #FCBA7F;
+    /* Change this to the color you prefer */
+    outline: none;
+    /* Remove the default focus outline */
+    box-shadow: none;
+    /* Remove the default focus box shadow */
+}
+
+.accordion-body {
+    background-color: #EAFFC5;
+}
+
+/*ask a question*/
+.ask-question {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 60px 0;
+    border-radius: 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    background-clip: padding-box;
+    margin-top: 30px;
+}
+
+.ask-question h2 {
+    color: #88AE45;
+    /* Custom color */
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.ask-question .form-control {
+    border-radius: 0.5rem;
+    padding: 15px;
+    border: 2px solid #88AE45;
+    /* Custom color */
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ask-question .form-control:focus {
+    border-color: #C29B67;
+    /* Focus color */
+    box-shadow: 0 0 5px rgba(194, 155, 103, 0.5);
+    /* Custom focus shadow */
+}
+
+.ask-question .btn-primary {
+    background-color: #88AE45;
+    /* Custom color */
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ask-question .btn-primary:hover {
+    background-color: #6b8f37;
+    /* Darker shade for hover */
+    transform: scale(1.05);
+}
+
+
+
+.help-option {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(to bottom right, #f1d47a, #d6aa71);
+    color: white;
+    border: none;
+}
+
+.help-option:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.help-option img {
+    transition: transform 0.3s ease;
+}
+
+.help-option:hover img {
+    transform: rotate(10deg);
+}
+
+.help-option h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.help-option p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.help-option .card-body {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+.contact-section {
+
+    padding-top: 20px;
+}
+
+.btn-contact {
+    background-color: #C29B67;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-contact:hover {
+    background-color: #af844e;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    border-color: white;
+    border-radius: 10px;
+}
+
+
+
+
+.card-body img {
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.how-to-help-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.help-option h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.help-option h5::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
