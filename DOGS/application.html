@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Adoption Application</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f1e7c9;
+    }
+
+    .form-container {
+      margin-top: 50px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 30px;
+      background-color: #fff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .application-img-container img {
+      width: 100px;
+    }
+
+    .form-control {
+      height: 40px;
+      font-size: 14px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 25px;
+    }
+
+    .form-group label {
+      position: absolute;
+      left: 15px;
+      top: -8px;
+      font-size: 12px;
+      color: #6c757d;
+      background-color: #fff;
+      padding: 0 5px;
+      transition: 0.2s;
+    }
+
+    .form-group input:focus {
+      border-color: #d5a76b;
+      box-shadow: 0 0 0 0.2rem rgba(210, 180, 140, 0.25);
+      outline: none;
+    }
+
+    .btn-orange,
+    .btn-orange:active {
+      color: #fff;
+      background-color: #bba646;
+      border-color: #7e5600;
+      border-radius: 5px;
+    }
+
+    .btn-orange:hover {
+      background-color: #988635;
+    }
+
+    .slide {
+      display: none;
+      animation-duration: .3s;
+    }
+
+    .slide-active {
+      display: block;
+    }
+
+    .form-check {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      /* Adjust spacing as needed */
+    }
+
+    .form-check-input {
+      margin-right: 10px;
+      /* Add space between checkbox and label */
+      cursor: pointer;
+      /* Change cursor to pointer */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container form-container">
+    <div class="application-img-container text-center">
+      <a href="../Home.html">
+        <img src="icons8-animal-shelter-100.png" alt="logo">
+      </a>
+      <h2 style="color: #7e5600;">Pawfect Home</h2>
+      <div style="color: #a28d2d;">"A world of difference for Dogs and people"</div>
+    </div>
+    <h4 class="text-center mb-4 mt-4"><mark>Dog Adoption Application Form</mark></h4>
+    <form>
+      <!-- Slide 1: Personal Information -->
+      <div id="slide1" class="slide slide-active">
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input type="text" class="form-control" id="fullName" name="fullName" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="text" class="form-control" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" class="form-control" id="address" name="address" required>
+        </div>
+        <button type="button" class="btn btn-orange btn-block" onclick="nextSlide()">Next</button>
+      </div>
+      <!-- Slide 2: Dog Preferences and Agreement -->
+      <div id="slide2" class="slide">
+        <div class="form-group">
+          <label for="dogName">Preferred Dog Name:</label>
+          <input type="text" class="form-control" id="dogName" name="dogName" required>
+        </div>
+        <div class="form-group">
+          <label for="dogId">Preferred Dog ID:</label>
+          <input type="text" class="form-control" id="dogId" name="dogId" required>
+        </div>
+        <div class="form-group">
+          <label for="livingSituation">Living Situation:</label>
+          <input type="text" class="form-control" id="livingSituation" name="livingSituation" required>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="agreement" name="agreement"
+            onclick="toggleSubmitButton()">
+          <label class="form-check-label" for="agreement">I agree to the adoption terms and conditions</label>
+        </div>
+        <button type="button" class="btn btn-secondary btn-block" onclick="prevSlide()">Previous</button>
+        <button type="button" class="btn btn-success btn-block" id="submitBtn" disabled>Submit Application</button>
+      </div>
+    </form>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function nextSlide() {
+      document.getElementById('slide1').classList.remove('slide-active');
+      document.getElementById('slide1').style.display = 'none';
+      document.getElementById('slide2').style.display = 'block';
+      document.getElementById('slide2').classList.add('slide-active');
+    }
+
+    function prevSlide() {
+      document.getElementById('slide2').classList.remove('slide-active');
+      document.getElementById('slide2').style.display = 'none';
+      document.getElementById('slide1').style.display = 'block';
+      document.getElementById('slide1').classList.add('slide-active');
+    }
+
+    function toggleSubmitButton() {
+      const submitBtn = document.getElementById('submitBtn');
+      const agreementCheckbox = document.getElementById('agreement');
+      submitBtn.disabled = !agreementCheckbox.checked;
+    }
+  </script>
+  <script type="module" src="./script/dogscontent.js"></script>
+  <script type="module" src="./script/util.js"></script>
+  <script type="module" src="./script/app.js"></script>
+</body>
+
+</html>
