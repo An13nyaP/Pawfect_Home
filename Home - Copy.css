@@ -1,0 +1,208 @@
+.container-fluid {
+    background-color: #C29B67;
+}
+
+body {
+    background-color: #E6EDB7;
+}
+
+.form-control:focus {
+    border-color: #C29B67;
+    box-shadow: 0 0 0 0.25rem #F6CCA4;
+}
+
+.carousel-image {
+    max-height: 500px;
+    /* Adjust the height as needed */
+    object-fit: cover;
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem;
+    /* Increase the font size of the heading */
+    font-weight: bold;
+    /* Make the heading bold */
+    color: #fff;
+    /* White color for the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Add a subtle shadow for better readability */
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    /* Increase the font size of the paragraph */
+    font-weight: 500;
+    /* Semi-bold weight for the paragraph */
+    color: #fff;
+    /* White color for the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Add a subtle shadow for better readability */
+}
+
+.testimonials {
+    background-color: #f3f4f6;
+    padding: 60px 20px;
+    border-top: 5px solid #f1bc19;
+    border-bottom: 5px solid #f1bc19;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonials::before {
+    content: '';
+    background: url('./General dogs/hand.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.6;
+    filter: blur(0.1px);
+}
+
+.testimonials h2 {
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.testimonial-item {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-item::before {
+    content: '';
+    background: rgba(241, 188, 25, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.testimonial-item:hover::before {
+    opacity: 1;
+}
+
+.testimonial-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+}
+
+.testimonial-item h5 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #f1bc19;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.add-review {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-review h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.form-control:focus {
+    border-color: #f1bc19;
+    box-shadow: 0 0 0 0.2rem rgba(241, 188, 25, 0.25);
+}
+
+.btn-primary {
+    background-color: #f1bc19;
+    border-color: #f1bc19;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #f5cd42;
+    border-color: #f5cd42;
+}
+
+/* Adoption Process Section Styles */
+.adoption-process {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    border-top: 5px solid #F1BC19;
+    border-bottom: 5px solid #F1BC19;
+}
+
+.adoption-process h2 {
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.process-step {
+    background: #F5E6C1;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+.process-step img {
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.process-step h5 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #EEB504;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.process-step p {
+    font-size: 14px;
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+}
+
+.process-step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.adoption-process .btn-primary {
+    background-color: #F1BC19;
+    border-color: #F1BC19;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.adoption-process .btn-primary:hover {
+    background-color: #FBCD59;
+    border-color: #FBCD59;
+}

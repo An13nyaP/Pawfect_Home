@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PAWFECT HOME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./AboutUs.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./logos/icons8-dog-50.png" alt="Bootstrap" width="60" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active"  href="./Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="DOGS/Dogs.html">Dogs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Adopt
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="DOGS/application.html">New Application</a></li>
+                            <li><a class="dropdown-item" href="DOGS/application.html">My Application</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="./FAQs.html">More info...</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li> -->
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 mb-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light me-2 mb-2" type="submit"><img src="./logos/icons8-search-50.png"
+                            height=24 width=24></button>
+                </form>
+                <a class="btn btn-outline-light me-2 mb-2 upBtn" href="SignUp.html">Sign Up</a>
+
+                <a class="btn btn-outline-light mb-2 inBtn" href="SignIn.html">Sign In</a>
+                <button style="display: none;" class="btn btn-outline-light mb-2 outBtn">Sign Out</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">About Us</h1>
+        <p class="lead text-center">Welcome to Pawfect Home, your perfect pet adoption partner. Our mission is to
+            connect loving families with wonderful dogs in need of a home. We believe that every dog deserves a
+            loving and caring family, and we are here to make that happen.</p>
+    </div>
+
+    <!-- Mission Section -->
+    <section class="mission-section text-center py-5">
+        <div class="container">
+            <h2><span
+                    style="background: linear-gradient(to right, #F4C42E, #C29B67); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Our
+                    Mission</span></h2>
+            <p>At Pawfect Home, our mission is to ensure that every dog has a loving and caring home. We are dedicated
+                to rescuing dogs from shelters, providing them with necessary medical care, and finding them the perfect
+                forever home. We strive to educate the community about the importance of pet adoption and responsible
+                pet ownership.</p>
+        </div>
+    </section>
+
+    <!-- How to Help Section -->
+    <!-- How to Help Section -->
+    <section class="how-to-help-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">How
+                to Help</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100 help-option shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="./logos/icons8-volunteer-100.png" alt="Volunteer" class="img-fluid mb-3">
+                            <h5>Volunteer</h5>
+                            <p>Join our team of dedicated volunteers to help care for our dogs and assist with events.
+                            </p>
+                            <button class="btn btn-contact" onclick="location.href='mailto:info@pawfecthome.com'">Learn
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 help-option shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="./logos/icons8-donate-100.png" alt="Donate" class="img-fluid mb-3">
+                            <h5>Donate</h5>
+                            <p>Your donations help us provide medical care, food, and shelter for the dogs in our care.
+                            </p>
+                            <button class="btn btn-contact" onclick="location.href='mailto:info@pawfecthome.com'">Donate
+                                now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 help-option shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="./logos/icons8-dog-adoption-100.png" alt="Foster" class="img-fluid mb-3">
+                            <h5>Foster</h5>
+                            <p>Become a foster parent and provide a temporary home for a dog in need until they find
+                                their forever home.</p>
+                            <button class="btn btn-contact"
+                                onclick="location.href='mailto:info@pawfecthome.com'">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <div class="container-fluid">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2024 Pawfect Home. All Rights Reserved.</p>
+            <a class="navbar-brand" href="#">
+                <img src="./logos/icons8-dog-50.png" alt="PAWFECT HOME" width="60" height="60">
+            </a>
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="Home.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="FAQs.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="AboutUs.html" class="nav-link px-2 text-body-secondary">About Us</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script type="module" src="siginout.js"></script>
+        <script type="module" src="signOut.js"></script>
+</body>
+
+</html>

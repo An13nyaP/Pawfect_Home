@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - PAWFECT HOME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./AboutUs.css" rel="stylesheet">
+    <style>
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #88AE45;
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./logos/icons8-dog-50.png" alt="Bootstrap" width="60" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="DOGS/Dogs.html">Dogs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Adopt
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="DOGS/application.html">New Application</a></li>
+                            <li><a class="dropdown-item" href="DOGS/application.html">My Application</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item  active" aria-current="page" href="./FAQs.html">More info...</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li> -->
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 mb-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light me-2 mb-2" type="submit"><img src="./logos/icons8-search-50.png"
+                            height=24 width=24></button>
+                </form>
+                <a class="btn btn-outline-light me-2 mb-2 upBtn" href="SignUp.html">Sign Up</a>
+
+                <a class="btn btn-outline-light mb-2 inBtn" href="SignIn.html">Sign In</a>
+                <button style="display: none;" class="btn btn-outline-light mb-2 outBtn">Sign Out</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Frequently Asked Questions</h1>
+
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Question 1: How can I adopt a dog from Pawfect Home?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Answer: To adopt a dog from Pawfect Home, you can start by filling out our online adoption
+                        application form. Once submitted, our team will review your application and contact you for
+                        further steps.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Question 2: What are the adoption fees?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Answer: The adoption fees vary depending on the age, breed, and medical history of the dog.
+                        However, our adoption fees generally cover the cost of spaying/neutering, vaccinations,
+                        microchipping, and other necessary medical procedures.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Question 3: Can I visit the shelter to meet the dogs before adopting?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Answer: Yes, you are welcome to visit our shelter to meet the dogs available for adoption.
+                        However, we recommend scheduling an appointment in advance to ensure that a staff member is
+                        available to assist you.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Question 4: What are the requirements for adopting a dog?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Answer: The requirements for adopting a dog may vary depending on the shelter's policies.
+                        However, common
+                        requirements include filling out an adoption application, providing proof of identity and
+                        residence,
+                        undergoing a home check, and paying the adoption fee.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Question 5: Can I adopt if I live in an apartment?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Answer: Yes, you can adopt a dog even if you live in an apartment. However, it's essential to
+                        consider the
+                        dog's size, energy level, and exercise needs to ensure they will be comfortable in your living
+                        space. Some
+                        shelters may have specific policies regarding apartment dwellers, so it's best to inquire
+                        directly.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Question 6: Are the dogs at Pawfect Home vaccinated and spayed/neutered?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Answer: Yes, all dogs available for adoption at Pawfect Home are vaccinated, spayed/neutered,
+                        and
+                        microchipped. We ensure that each dog receives necessary medical care before being placed in
+                        their forever
+                        home.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Ask a Question Section -->
+    <section class="ask-question">
+        <div class="container">
+            <h2 class="text-center mb-4">Ask a Question</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="questionName" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="questionName" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="questionEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="questionEmail" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="questionMessage" class="form-label">Question</label>
+                    <textarea class="form-control" id="questionMessage" rows="4" required></textarea>
+                </div>
+                <div class="text-center mt-4">
+                    <button type="button" id="questionBtn" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <div class="container-fluid" style="margin-bottom: 50px;">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2024 Pawfect Home. All Rights Reserved.</p>
+            <a class="navbar-brand" href="#">
+                <img src="./logos/icons8-dog-50.png" alt="PAWFECT HOME" width="60" height="60">
+            </a>
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="Home.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="FAQs.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="AboutUs.html" class="nav-link px-2 text-body-secondary">About Us</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script type="module" src="siginout.js"></script>
+        <script type="module" src="signOut.js"></script>
+        <script type="module" src="FAQs.js"></script>
+</body>
+
+</html>

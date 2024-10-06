@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWFECT HOME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./Home.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./logos/icons8-dog-50.png" alt="Bootstrap" width="60" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="DOGS/Dogs.html">Dogs</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Adopt
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="DOGS/application.html">New Application</a></li>
+                            <li><a class="dropdown-item" href="DOGS/application.html">My Application</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="FAQs.html">More info...</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li> -->
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 mb-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-light me-2 mb-2" type="submit"><img src="./logos/icons8-search-50.png"
+                            height=24 width=24></button>
+                </form>
+                <a class="btn btn-outline-light me-2 mb-2 upBtn" href="SignUp.html">Sign Up</a>
+
+                <a class="btn btn-outline-light mb-2 inBtn" href="SignIn.html">Sign In</a>
+                <button style="display: none;" class="btn btn-outline-light mb-2 outBtn">Sign Out</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="my-4">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active one">
+                    <img src="./General dogs/LabRet.jpg" class="d-block w-100 carousel-image" alt="Four dogs">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Welcome to <span>Pawfect Home!</span></h5>
+                        <p>Your perfect pet adoption partner.</p>
+                    </div>
+                </div>
+                <div class="carousel-item two">
+                    <img src="./General dogs/camdog.jpg" class="d-block w-100 carousel-image" alt="One dog">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Find Your Best Friend</h5>
+                        <p>Adopt a loving dog today.</p>
+                    </div>
+                </div>
+                <div class="carousel-item three">
+                    <img src="./General dogs/boy.jpg" class="d-block w-100 carousel-image" alt="Baby and Dog">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Bring Joy to Your Home</h5>
+                        <p>Discover the joy of adopting a dog.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Adoption Process Section -->
+    <section class="adoption-process py-5" id="adoption-process">
+        <div class="container">
+            <h2 class="text-center mb-4"><span
+                    style="background: linear-gradient(to right, #F4C42E, #C29B67); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Our
+                    Adoption Process</span>
+            </h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="process-step">
+                        <img src="./logos/Doghouse.png" alt="Step 1" class="img-fluid mb-3">
+                        <h5>Step 1</h5>
+                        <p>Visit our shelter or browse available dogs on our website.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="process-step">
+                        <img src="./logos/icons8-dogs-64.png" alt="Step 2" class="img-fluid mb-3">
+                        <h5>Step 2</h5>
+                        <p>Meet your potential new family member and get to know them.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="process-step">
+                        <img src="./logos/calen.png" alt="Step 3" class="img-fluid mb-3">
+                        <h5>Step 3</h5>
+                        <p>Complete the adoption application and wait for approval.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="process-step">
+                        <img src="./logos/girly.png" alt="Step 4" class="img-fluid mb-3">
+                        <h5>Step 4</h5>
+                        <p>Bring your new pet home and start your journey together!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="./AboutUs.html" class="btn btn-primary btn-lg">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2> <span
+                    style="background: linear-gradient(to right, #FBD77A, #FBC129); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">What
+                    Our Customers Say</span></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-item">
+                        <p>"Pawfect Home helped me find the perfect dog for my family. The process was smooth and the
+                            staff were incredibly helpful!"</p>
+                        <h5>- John Doe</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-item">
+                        <p>"A wonderful experience! The team at Pawfect Home is amazing, and we couldn't be happier with
+                            our new furry friend."</p>
+                        <h5>- Jane Smith</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-item">
+                        <p>"Highly recommend Pawfect Home for anyone looking to adopt a pet. The service was exceptional
+                            and the dogs are well cared for."</p>
+                        <h5>- Michael Johnson</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="add-review">
+                        <h4>Add Your Review</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label for="reviewName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="reviewName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="reviewMessage" class="form-label">Review</label>
+                                <textarea class="form-control" id="reviewMessage" rows="3" required></textarea>
+                            </div>
+                            <button type="button" id="reviewBtn" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="container-fluid" style="margin-bottom: 10px;">
+        <!-- Footer -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2024 Pawfect Home. All Rights Reserved.</p>
+            <a class="navbar-brand" href="#">
+                <img src="./logos/icons8-dog-50.png" alt="PAWFECT HOME" width="60" height="60">
+            </a>
+            <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="Home.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="FAQs.html" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="AboutUs.html" class="nav-link px-2 text-body-secondary">About
+                        Us</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script type="module" src="siginout.js"></script>
+    <script type="module" src="signOut.js"></script>
+    <script type="module" src="review.js"></script>
+</body>
+
+</html>
